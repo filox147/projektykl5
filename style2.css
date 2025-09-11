@@ -1,0 +1,72 @@
+body {
+    font-family: Verdana, sans-serif;
+}
+
+img {
+    display: block;
+    position: absolute;
+    left: 15%;
+    width: 70%;
+    z-index: -1; 
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+header {
+    background-color: rgba(60, 120, 160, 0.9); 
+    color: white;
+    font-size: 150%;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+
+#lewy {
+    background-color: rgba(0, 100, 0, 0.6); 
+    margin: 2%;
+    width: 75%;
+    height: 600px;
+    font-size: 120%;
+    overflow: auto;
+    box-shadow: 10px 10px 7px DimGray;
+    float: left;
+
+}
+
+
+#prawyg, #prawyd {
+    background-color: rgba(0, 100, 0, 0.6); 
+    margin: 1%;
+    width: 15%;
+    height: 300px;
+    box-shadow: 10px 10px 7px DimGray;
+    float: right;
+   
+}
+
+
+footer {
+    background-color: rgba(60, 120, 160, 0.9);
+    color: white;
+    padding: 10px;
+    text-align: center;
+   
+     position: fixed;  
+  bottom: 0;        
+  left: 0;          
+  width: 100%;  
+}
+
+
+h1, h2 {
+    text-align: center;
+    font-style: italic;
+}
+
+
