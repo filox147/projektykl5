@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz Rejestracyjny</title>
+    <style>
+
+        h1 {
+            text-align: center;
+            text-decoration: double;
+            text-decoration: overline;
+            text-shadow: 10cqb;
+      
+            
+        }
+
+        form {   
+            align-items: center;
+            display: flex;
+            justify-content: center;
+        }
+
+
+        html {
+            background-color: rgb(211, 166, 243);
+        }
+         table {
+            background-color: #00ccff;
+            border: 5px  double rgb(12, 12, 12);
+            padding: 10px;
+        }
+        th {
+            background-color: #ffffcc;
+            color: red;
+            font-size: 24px;
+            border: 2px solid rgb(255, 255, 255);
+        }
+        td {
+            padding: 5px;
+            border: 2px solid rgb(255, 255, 255);
+        }
+        #nazwa, #haslo, textarea, select {
+            width: 100%;
+        }
+       
+    </style>
+</head>
+<body>
+<H1>Filip Lewandowski formularz mega trudny pozdrawiam</H1>
+<form>
+    <table>
+        <tr>
+            <th colspan="2">Registration Form</th>
+        </tr>
+        <tr>
+            <td><label for="nazwa">Enter Name</label></td>
+            <td><input type="text" id="nazwa" name="nazwa"></td>
+        </tr>
+        <tr>
+            <td><label for="haslo">Enter Password</label></td>
+            <td><input type="password" id="haslo" name="haslo"></td>
+        </tr>
+        <tr>
+            <td><label for="adres">Enter Address</label></td>
+            <td><textarea id="adres" name="adres" rows="4"></textarea></td>
+        </tr>
+        <tr>
+            <td>Select Game</td>
+            <td>
+                <input type="checkbox" id="hokej" name="gra" value="Hokej"> Hockey<br>
+                <input type="checkbox" id="pilka" name="gra" value="Football"> Football<br>
+                <input type="checkbox" id="badminton" name="gra" value="Badminton"> Badminton<br>
+                <input type="checkbox" id="krykiet" name="gra" value="Cricket"> Cricket<br>
+                <input type="checkbox" id="siatkowka" name="gra" value="Volleyball"> volleyball
+            </td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                <input type="radio" id="mezczyzna" name="plec" value="Mężczyzna"> Male
+                <input type="radio" id="kobieta" name="plec" value="Kobieta"> Female
+            </td>
+        </tr>
+        <tr>
+            <td>Select ur age</td>
+            <td>
+                <select id="wiek" name="wiek">
+                    <option value="">Select</option>
+                    <option value="18-25">18-25</option>
+                    <option value="26-35">26-35</option>
+                    <option value="36-50">36-50</option>
+                    <option value="50+">50+</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Select Photo</td>
+            <td><input type="file" id="zdjecie" name="zdjecie"></td>
+        </tr>
+        <tr>
+            <td><input type="button" value="Click Me"></td>
+            <td>
+                <input type="reset" value="Resetuj">
+                <input type="submit" value="Submit Form">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
