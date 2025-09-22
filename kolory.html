@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    
+ 
+
+#hex {
+    border: 5px solid #e74c3c; /* czerwony */
+}
+
+#rgb {
+    border: 5px solid rgb(46, 204, 113); /* zielony */
+}
+
+#rgba {
+    border: 5px solid rgba(52, 73, 94, 1); /* granatowy */
+}
+
+#HSL {
+    border: 5px solid hsl(45, 100%, 50%); /* żółty */
+}
+
+#HSLA {
+    border: 5px solid hsla(280, 60%, 60%, 1); /* fioletowy */
+}
+
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 100px);
+      gap: 10px;
+    }
+    .grid div {
+      border: 5px solid black;
+      text-align: center;
+      line-height: 100px;
+      margin: 5px;
+    }
+  </style>
+  <tiltle>Ćwiczenie kolory Filip</tiltle>
+</head>
+<body>
+
+  <h1>Ćwiczenie z kolorami w CSS</h1>
+
+  <div class="grid">
+    <div>Nazwa koloru</div>
+    <div id="hex">HEX #e74c3c</div>
+    <div id="rgb">RGB rgb(46, 204, 113)</div>
+    <div id="rgba">RGBA rgba(52, 73, 94, 1)</div>
+    <div id="HSL">HSL hsl(45, 100%, 50%)</div>
+    <div id="HSLA">HSLA hsla(280, 60%, 60%, 1)</div>
+  </div>
+
+</body>
+</html>
