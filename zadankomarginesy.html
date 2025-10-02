@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Marginesy Filip</title>
+  <style>
+    #zadanie1 .blok1 {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      margin-top: 20px;
+      margin-right: 30px;
+      margin-bottom: 40px;
+      margin-left: 10px;
+    }
+
+    #zadanie1 .blok2 {
+      background-color: blue;
+      width: 100px;
+      height: 100px;
+      margin-top: 50px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-left: 40px;
+    }
+
+    #zadanie1 .blok3 {
+      background-color: green;
+      width: 100px;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    #zadanie2 .a {
+      background-color: pink;
+      width: 200px;
+      height: 100px;
+      margin: 40px;
+    }
+
+    #zadanie2 .b {
+      background-color: orange;
+      width: 200px;
+      height: 100px;
+      margin: 20px 60px;
+    }
+
+    #zadanie2 .c {
+      background-color: yellow;
+      width: 200px;
+      height: 100px;
+      margin: 10px 50px 30px;
+    }
+
+    #zadanie2 .d {
+      background-color: purple;
+      width: 200px;
+      height: 100px;
+      margin: 5px 20px 10px 40px;
+    }
+
+    #zadanie3 .negatywny {
+      background-color: brown;
+      width: 300px;
+      height: 100px;
+      margin-top: -30px;
+    }
+
+    #zadanie4 .center {
+      background-color: gray;
+      width: 300px;
+      height: 100px;
+      margin: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Zadanie 1</h2>
+  <p>Marginesy zmieniają położenie każdego bloku.</p>
+  <p>margin-left: auto; margin-right: auto; - blok jest wyśrodkowany.</p>
+  <div id="zadanie1">
+    <div class="blok1"></div>
+    <div class="blok2"></div>
+    <div class="blok3"></div>
+  </div>
+
+  <h2>Zadanie 2</h2>
+  <p>1 wartość — marginesy takie same z każdej strony.</p>
+  <p>2 wartości — góra/dół i lewo/prawo.</p>
+  <p>3 wartości — góra, lewo/prawo, dół.</p>
+  <p>4 wartości — góra, prawo, dół, lewo.</p>
+  <p>Skrócona notacja jest łatwiejsza i szybka.</p>
+  <div id="zadanie2">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+  </div>
+
+  <h2>Zadanie 3</h2>
+  <p>margin-top: -30px; przesuwa blok w górę.</p>
+  <p>Ujemne marginesy mogą nakładać elementy.</p>
+  <div id="zadanie3">
+    <div class="negatywny"></div>
+  </div>
+
+  <h2>Zadanie 4</h2>
+  <p>margin: auto; - wyśrodkowuje blok poziomo.</p>
+  <p>Trzeba mieć ustawioną szerokość, żeby działało.</p>
+  <div id="zadanie4">
+    <div class="center"></div>
+  </div>
+
+</body>
+</html>
