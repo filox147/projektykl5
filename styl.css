@@ -1,0 +1,90 @@
+/* Ustawienia ogólne */
+* {
+    font-family: Garamond, serif;
+    color: white;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+}
+
+
+header {
+    background-color: indigo;
+    text-align: center;
+    padding: 2px;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#lewa, #prawa {
+    background-color: indigo;
+    height: 600px;
+    padding: 10px;
+}
+
+#srodek {
+    background-color: black;
+    height: 600px;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.gra {
+    text-align: center;
+    margin: 3px;
+    padding: 3px;
+}
+
+
+footer {
+    background-color: indigo;
+    height: 150px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+@media screen and (min-width: 800px) {
+    #lewa, #prawa {
+        width: 20%;
+    }
+
+    #srodek {
+        width: 60%;
+    }
+}
+
+
+@media screen and (max-width: 799px) {
+    #lewa, #srodek, #prawa {
+        width: 100%;
+    }
+}
+
+
+.punkty {
+    background-color: tomato;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+li {
+    padding: 5px;
+}
+
+input {
+    margin: 10px;
+    color: indigo;
+}

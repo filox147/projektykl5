@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gry komputerowe</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+
+    <header>
+        <h1>Ranking gier komputerowych</h1>
+    </header>
+
+    <main>
+        
+        <section id="lewa">
+            <h3>Top 5 gier w tym miesiącu</h3>
+            <ul>
+                <li>Mag <span class="punkty">357</span></li>
+                <li>Księżniczka Persji <span class="punkty">293</span></li>
+                <li>Zamczysko <span class="punkty">200</span></li>
+                <li>Kalipso <span class="punkty">125</span></li>
+                <li>Wyprawa Na Księżyc <span class="punkty">103</span></li>
+            </ul>
+
+            <h3>Nasz sklep</h3>
+            <a href="http://sklep.gry.pl" target="_blank">Tu kupisz gry</a>
+
+            <h3>Stronę wykonał</h3>
+            <p>00000000000</p>
+        </section>
+
+        <section id="srodek">
+            <div class="gra">
+                <img src="Mag.jpg" alt="Mag" title="1" width="300">
+                <p>Mag</p>
+            </div>
+            <div class="gra">
+                <img src="Kalipso.jpg" alt="Kalipso" title="2" width="300">
+                <p>Kalipso</p>
+            </div>
+            <div class="gra">
+                <img src="Katedra.jpg" alt="Katedra" title="3" width="300">
+                <p>Katedra</p>
+            </div>
+            <div class="gra">
+                <img src="Czarodziejka.jpg" alt="Czarodziejka" title="4" width="300">
+                <p>Czarodziejka</p>
+            </div>
+        </section>
+
+      
+        <section id="prawa">
+            <h3>Dodaj nową grę</h3>
+            <form method="post" action="gry.php">
+                <label>Nazwa:</label><br>
+                <input type="text" name="nazwa"><br>
+
+                <label>Opis:</label><br>
+                <input type="text" name="opis"><br>
+
+                <label>Cena:</label><br>
+                <input type="number" step="0.01" name="cena"><br>
+
+                <label>Zdjęcie:</label><br>
+                <input type="text" name="zdjecie"><br>
+
+                <button type="submit">DODAJ</button>
+            </form>
+        </section>
+    </main>
+
+    
+    <footer>
+        <form method="post" action="gry.php">
+            <label>ID gry:</label>
+            <input type="number" name="id">
+            <button type="submit">Pokaż opis</button>
+        </form>
+        
+        
+</html>
